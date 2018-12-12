@@ -150,6 +150,7 @@ input[type=submit] {
 .content {
     background-color: white;
     padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #LastPic {
