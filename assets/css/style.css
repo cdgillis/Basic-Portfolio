@@ -1,4 +1,3 @@
-
 body {
     height: 100%;
     background-image: url('../images/IMG_1464.jpg');
@@ -9,70 +8,83 @@ body {
     background-color: black;
     margin: auto;
     padding: 0;
-}
-
-h3 {
-    font-family: 'Times New Roman', Times, serif
-}
-
-.Header {
-    background:#ffffff;
-    width: 100%;
-    margin-left: -8.5px;
-    top: 0;
-    position: fixed;
-    z-index: 1;
-    border-bottom: solid;
-    border-color: #cccccc;
-    border-width: 2px;
-
-} 
-
-.HeaderName {
-    float:left;
-    margin-left: 13.1%;
-    background-color: #4aaaa5;
-    color: white;
-    width: 22%;
     text-align: center;
-    font-family: 'Monoton', cursive;
-    padding-bottom: 1%;
 }
 
-.HeaderLinks {
+nav {
+    display: inline-block;
+    /* float: none; */
+    vertical-align: top;
+}
+
+.navbar-brand {
+    font-size: 1.9rem;
+    /* margin-left: 4.25em; */
+    font-family: 'Monoton', cursive;
+}
+
+#mainpic {
+    border-radius: 150px;
+}
+/* .HeaderLinks {
     float:right;
     margin-right: 14.2%;
     margin-top: 2%;
     font-size: xx-small;
     color: gray;
-    text-decoration: none; /* why didn't this work?*/
-    }
+    text-decoration: none;
+    }  */
 
-    a:link {
+/* a:link {
         text-decoration: none; /* but this did?*/
-    }
-    a:visited {
+
+/* a:visited {
         text-decoration: none;
         color: gray;
-    }
+    } */
 
-.Container {
+/* .Container {
     position: relative;
-    }
+    
+    } */
 
-.MainContent {
+div.MainContent {
     background-color: #ffffff;
-    position:relative;
+
     border-style: solid;
     border-width: 1px;
     border-color: #dddddd;
-    margin-top: 10%;
+    border-radius: 8px;
+    margin: 4em 15em 4em 15em;
+    /* margin-top: 10%;
     margin-right: 13.7%;
-    margin-left: 12.6%;
-    text-align: left;
-    opacity: 0.9;
-  }
+    margin-left: 12.6%; */
+    /* text-align: left; */
+    /* opacity: 0.9; */
+    padding: 5.5em;
+}
 
+@media only screen and (max-width: 1200px) {
+    div.MainContent {
+        margin: 2em 4em 2em 4em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div.MainContent {
+        max-width: 1200px;
+    }
+    /* .footer-copyright {
+        padding-right: 15%;
+    } */
+}
+
+@media only screen and (max-width: 600px) {
+    div.MainContent {
+        margin: 1em 0 1em 0;
+    }
+}
+/* 
   .ContentHeaderStyle{
     border-bottom: solid;
     border-color: #dddddd;
@@ -95,11 +107,32 @@ h3 {
     margin-right: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+    max-width: 250px;
+    max-height: 250px;
+} */
+
+div.content {
+    text-align: center;
+    margin: 20px;
+
+}
+
+div.content:hover {
+    background-color: lightsteelblue;
+    border-radius: 8px;
 }
 
 
-/* Contact */
+h4 {
+    margin-top: 1.5em;
+}
 
+a:hover {
+    color: hotpink;
+}
+
+/* Contact */
+/* 
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -134,60 +167,44 @@ input[type=submit] {
  
 /* Gallery */
 
-.row {
+/* .row {
     margin: 8px -16px;
 }
 
 /* Add padding BETWEEN each column (Gallery)*/
-.row,
+/* .row,
 .row > .column {
     padding: 8px;
-}
+} */
 
 /* Create four equal columns that floats next to each other (Gallery)*/
-.column {
+/* .column {
     float: left;
     width: 40%;
-}
+} */
 
-/* Clear floats after rows (Gallery)*/ 
-.row:after {
+/* Clear floats after rows (Gallery)*/
+/* .row:after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 /* Content (Gallery)*/
-.content {
+/* .content {
     background-color: white;
     padding: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+} */
 
-#LastPic {
+/* #LastPic {
     clear: right;
-}
+} */
 
-/* FOOTER */
+/* i {
+    padding: 10px;
+} */
 
-footer {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: lightgray;
-    clear: both;
-    width: 100%;
-    height: 40px;
-    /* padding-top: 20px; */
-    padding-bottom: 5px;
-    border-top: solid;
-    border-color: white;
-    border-width: 5px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
-.footertext {
-    margin-bottom: 0;
+.footer-copyright {
+    color: gray;
 }
