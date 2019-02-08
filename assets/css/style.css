@@ -7,25 +7,34 @@ body {
     background-repeat: no-repeat;
     background-color: black;
     margin: auto;
-    padding: 0;
+    /* padding: 0; */
     text-align: center;
+    /* clear: both; */
 }
 
 nav {
     display: inline-block;
-    /* float: none; */
+    position: fixed;
     vertical-align: top;
+    background-image: linear-gradient(to right, navy, rgb(231, 115, 246));
+    margin-bottom: 10px;
 }
 
 .navbar-brand {
     font-size: 1.9rem;
     /* margin-left: 4.25em; */
     font-family: 'Monoton', cursive;
+
+}
+
+#about-me {
+    margin-top: 140px;
 }
 
 #mainpic {
     border-radius: 150px;
 }
+
 /* .HeaderLinks {
     float:right;
     margin-right: 14.2%;
@@ -56,12 +65,14 @@ div.MainContent {
     border-color: #dddddd;
     border-radius: 8px;
     margin: 4em 15em 4em 15em;
-    /* margin-top: 10%;
+    overflow: auto;
+    /* 
     margin-right: 13.7%;
     margin-left: 12.6%; */
     /* text-align: left; */
     /* opacity: 0.9; */
     padding: 5.5em;
+    clear: both;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -74,9 +85,11 @@ div.MainContent {
     div.MainContent {
         max-width: 1200px;
     }
-    /* .footer-copyright {
-        padding-right: 15%;
-    } */
+}
+@media only screen and (min-width: 1900px) {
+    .footer-copyright {
+        padding-right: 23em;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -84,36 +97,11 @@ div.MainContent {
         margin: 1em 0 1em 0;
     }
 }
-/* 
-  .ContentHeaderStyle{
-    border-bottom: solid;
-    border-color: #dddddd;
-    color: #4aaaa5;
-    margin-left: 1%;
-    margin-right: 1%;
-    line-height: 1.5cm;
-    padding-left: 1.7%;
-}
-
-  .ContentText{
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-  }
-
-  #mainpic {
-    float:left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    max-width: 250px;
-    max-height: 250px;
-} */
 
 div.content {
     text-align: center;
-    margin: 20px;
+    margin: 1em;
+    padding: 1em;
 
 }
 
@@ -128,7 +116,12 @@ h4 {
 }
 
 a:hover {
-    color: hotpink;
+    color: rgb(115, 73, 231);
+}
+
+.form-control,
+.btn {
+    border-radius: 6px;
 }
 
 /* Contact */
@@ -207,4 +200,5 @@ input[type=submit] {
 
 .footer-copyright {
     color: gray;
+    margin-bottom: 0;
 }

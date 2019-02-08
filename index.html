@@ -12,6 +12,7 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -21,7 +22,7 @@
     <!--NAVBAR -->
 
     <div class="bs-component">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <a id="catherine-gillis" class="navbar-brand typography" href="index.html">catherine gillis</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
                 aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,14 +46,15 @@
         </nav>
     </div>
 
-    <div class="MainContent jumbotron">
-        <h1 class="display-3">Not your typical full-stack web developer</h1>
-        <p class="lead">I'm also a writer and insurance professional with a business degree from McGill University and valuable client-facing experiences on three continents</p>
+    <div id="about-me" class="MainContent jumbotron">
+        <h1 class="display-3 animated pulse delay-1s">Not your typical full-stack developer.</h1>
+        <p class="lead">I'm also a writer and insurance professional with a business degree from McGill University and
+            valuable client-facing experiences on three continents.</p>
         <hr class="my-4">
         <p>Trained in: JavaScript,
             HTML,
             CSS,
-            jQuery, 
+            jQuery,
             Bootstrap,
             Express.js,
             React.js,
@@ -212,19 +214,22 @@
 
                 <!-- NEW CONTACT STYLING -->
 
-                <form>
+
+                <form action="https://formspree.io/cdgillis@gmail.com" method="POST">
                     <fieldset>
-                        <div class="form-group row">
-                            <label for="">Email address</label> 
-                             <!-- NEED TO ADD EMAIL ADDRESS -->
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="Enter email">
+                        <div class="container">
+                            <div class="form-group row">
+                                <label>Email address</label>
+                                <!-- NEED TO ADD EMAIL ADDRESS -->
+                                <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleTextarea">Message</label>
+                                <textarea name="message" class="form-control" id="exampleTextarea" rows="3" placeholder="Write something..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleTextarea">Message</label>
-                            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Write something..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
                     </fieldset>
                 </form>
 
@@ -253,9 +258,6 @@
         </div>
     </div>
 
-    <br>
-    <br>
-    <br>
     <footer>
         <div class="page-footer font-small wrapper bg-dark">
             <h6 class="footer-copyright text-center py-3">Copyright &copy; cdgillis 2019</h6>
