@@ -152,6 +152,10 @@ div.container {
 
 /* FOOTER */
 
+footer {
+    opacity: 0.9;
+}
+
 .footer-copyright {
     color: rgb(115, 73, 231);
     margin-bottom: 0;
