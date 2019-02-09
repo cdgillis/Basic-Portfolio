@@ -7,9 +7,6 @@ body {
     background-repeat: no-repeat;
     background-color: black;
     margin: auto;
-    /* padding: 0; */
-    text-align: center;
-    /* clear: both; */
 }
 
 /* NAVIGATION BAR */
@@ -48,6 +45,7 @@ div.MainContent {
     overflow: auto;
     padding: 5.5em;
     clear: both;
+    text-align: center;
 }
 
 h2 {
@@ -124,12 +122,24 @@ div.container {
 }
 
 /* LinkedIn */
-.fa-linkedin {
-    margin-top: 1rem;
-    color: #0077B5;
+#linked-in,
+#github {
+    float: right;
 }
 
+#linked-in-header,
+#github-header {
+   display: inline-block;
+   padding-top: 1.3rem;
+   margin-right: 1rem;
+   
+   
+}
 
+.fa-linkedin {
+    /* margin-top: 1rem; */
+    color: #0077B5;
+}
 
 .fa-linkedin:hover {
     color: rgb(115, 73, 231);
