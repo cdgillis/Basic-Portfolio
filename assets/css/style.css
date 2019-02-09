@@ -31,6 +31,7 @@ nav {
 
 #mainpic {
     border-radius: 150px;
+    /* float: right; */
 }
 
 /* MAIN CONTENT STYLING */
@@ -43,7 +44,7 @@ div.MainContent {
     border-radius: 8px;
     margin: 4em 15em 4em 15em;
     overflow: auto;
-    padding: 5.5em;
+    padding: 5em;
     clear: both;
     text-align: center;
 }
