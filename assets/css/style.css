@@ -47,17 +47,19 @@ div.MainContent {
     padding: 5em;
     clear: both;
     text-align: center;
+    opacity: 0.95;
 }
+
 
 h2 {
     font-family: 'Syncopate', sans-serif;
-    color:rgb(115, 73, 231);
+    color: rgb(115, 73, 231);
     font-weight: 1000;
 }
 
 b {
     font-weight: 1000;
-    color:rgb(115, 73, 231);
+    color: rgb(115, 73, 231);
 }
 
 /* MEDIA QUERIES */
@@ -73,6 +75,7 @@ b {
         max-width: 1200px;
     }
 }
+
 @media only screen and (min-width: 1900px) {
     .footer-copyright {
         padding-right: 23em;
@@ -123,32 +126,33 @@ div.container {
 }
 
 /* LinkedIn */
-#linked-in,
-#github {
+/* #linked-in {
     float: right;
-}
+    text-align: right;
+} */
 
 #linked-in-header,
 #github-header {
-   display: inline-block;
-   padding-top: 1.3rem;
-   margin-right: 1rem;
-   
-   
+    display: inline-block;
+    padding-top: 1.3rem;
+    margin-right: 1rem;
 }
 
 .fa-linkedin {
     /* margin-top: 1rem; */
     color: #0077B5;
+    margin-left:1rem;
+    opacity: 0.5;
 }
 
 .fa-linkedin:hover {
-    color: rgb(115, 73, 231);
+    
+    opacity: 1;
 }
 
 /* FOOTER */
 
 .footer-copyright {
-    color:rgb(115, 73, 231);
+    color: rgb(115, 73, 231);
     margin-bottom: 0;
 }
