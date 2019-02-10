@@ -50,11 +50,24 @@ div.MainContent {
     opacity: 0.95;
 }
 
+.navbar-brand:hover {
+    opacity: 0.8;
+}
 
 h2 {
     font-family: 'Syncopate', sans-serif;
     color: rgb(115, 73, 231);
     font-weight: 1000;
+}
+
+h6 {
+   color: lightgray;
+
+}
+
+h6:hover {
+    color: rgb(115, 73, 231);
+
 }
 
 b {
@@ -84,7 +97,7 @@ b {
 
 @media only screen and (max-width: 600px) {
     div.MainContent {
-        margin: 1em 0 1em 0;
+        margin: 1em 0 1em 0;   
     }
 }
 
@@ -92,7 +105,7 @@ b {
 
 div.content {
     text-align: center;
-    margin: 1em;
+    margin: 1em 1em 0 1em;
     padding: 1em;
 
 }
