@@ -15,7 +15,8 @@ nav {
     display: inline-block;
     position: fixed;
     vertical-align: top;
-    background-image: linear-gradient(to right, navy, rgb(231, 115, 246));
+    background-color: black;
+    /*background-image: linear-gradient(to right, navy, rgb(231, 115, 246));*/
     margin-bottom: 10px;
 }
 
@@ -32,6 +33,10 @@ nav {
 #mainpic {
     border-radius: 150px;
     /* float: right; */
+}
+
+.nav-link {
+    cursor: pointer;
 }
 
 /* MAIN CONTENT STYLING */
@@ -155,11 +160,10 @@ div.container {
     /* margin-top: 1rem; */
     color: #0077B5;
     margin-left:1rem;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 .fa-linkedin:hover {
-    
     opacity: 1;
 }
 
