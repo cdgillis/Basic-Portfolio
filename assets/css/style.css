@@ -15,9 +15,11 @@ nav {
     display: inline-block;
     position: fixed;
     vertical-align: top;
-    background-color: black;
+    /* background-color: black; */
     /*background-image: linear-gradient(to right, navy, rgb(231, 115, 246));*/
     margin-bottom: 10px;
+    background-color: transparent;
+    
 }
 
 .navbar-brand {
@@ -27,11 +29,12 @@ nav {
 }
 
 #about-me {
-    margin-top: 140px;
+    margin-top: 110px;
 }
 
 #mainpic {
     border-radius: 150px;
+    align-content: center;
     /* float: right; */
 }
 
@@ -51,7 +54,7 @@ div.MainContent {
     overflow: auto;
     padding: 5em;
     clear: both;
-    text-align: center;
+    text-align: left;
     opacity: 0.95;
 }
 
@@ -60,31 +63,24 @@ div.MainContent {
 }
 
 h2 {
-    font-family: 'Syncopate', sans-serif;
+    /* font-family: 'Syncopate', sans-serif; */
+    font-family: 'Monoton', sans-serif;
     color: rgb(115, 73, 231);
-    font-weight: 1000;
-}
-
-h6 {
-   color: lightgray;
-
-}
-
-h6:hover {
-    color: rgb(115, 73, 231);
-
+    font-weight: 500;
 }
 
 b {
-    font-weight: 1000;
+    font-weight: 400;
     color: rgb(115, 73, 231);
+    font-size: 2em;
+    font-family: 'Monoton', sans-serif;
 }
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1200px) {
     div.MainContent {
-        margin: 2em 4em 2em 4em;
+        margin: 3em 5em 3em 5em;
     }
 }
 
@@ -128,6 +124,14 @@ a:hover {
     color: rgb(115, 73, 231);
 }
 
+h6 {
+    color: grey;
+    text-align: center;
+ }
+ 
+ h6:hover {
+     color: rgb(115, 73, 231);
+ }
 /* CONTACT */
 
 div.container {
