@@ -15,32 +15,49 @@ nav {
     display: inline-block;
     position: fixed;
     vertical-align: top;
-    /* background-color: black; */
+    background-color: black;
+    /* background-color: transparent; */
     /*background-image: linear-gradient(to right, navy, rgb(231, 115, 246));*/
-    margin-bottom: 10px;
-    background-color: transparent;
-    
+    margin-bottom: 20px;
 }
+
+/* Logo - Catherine Gillis */
 
 .navbar-brand {
     font-size: 1.9rem;
     /* margin-left: 4.25em; */
     font-family: 'Monoton', cursive;
+    font-weight: 500;
 }
 
-#about-me {
-    margin-top: 110px;
+.navbar-brand:hover {
+    /* text-shadow: -1px 0 rgb(115, 73, 231), 0 1px rgb(115, 73, 231), 1px 0 rgb(115, 73, 231), 0 -1px rgb(115, 73, 231); */
+    text-decoration: underline rgb(115, 73, 231) solid;
 }
 
-#mainpic {
-    border-radius: 150px;
-    align-content: center;
-    /* float: right; */
+/* Tab - LinkedIn */
+
+.fa-linkedin {
+    /* margin-top: 1rem; */
+    color: #0077B5;
+    margin-left:1rem;
+    opacity: 0.9;
 }
+
+.fa-linkedin:hover {
+    opacity: 1;
+}
+
+/* Tabs - Portfolio & Contact */
 
 .nav-link {
     cursor: pointer;
 }
+
+.nav-link:hover {
+    text-shadow: -1px 0 rgb(115, 73, 231), 0 1px rgb(115, 73, 231), 1px 0 rgb(115, 73, 231), 0 -1px rgb(115, 73, 231);
+}
+
 
 /* MAIN CONTENT STYLING */
 
@@ -58,10 +75,6 @@ div.MainContent {
     opacity: 0.95;
 }
 
-.navbar-brand:hover {
-    opacity: 0.8;
-}
-
 h2 {
     /* font-family: 'Syncopate', sans-serif; */
     font-family: 'Monoton', sans-serif;
@@ -69,37 +82,21 @@ h2 {
     font-weight: 500;
 }
 
+#about-me {
+    margin-top: 130px;
+}
+
+#mainpic {
+    border-radius: 150px;
+    align-content: center;
+    /* float: right; */
+}
+
 b {
     font-weight: 400;
     color: rgb(115, 73, 231);
     font-size: 2em;
     font-family: 'Monoton', sans-serif;
-}
-
-/* MEDIA QUERIES */
-
-@media only screen and (max-width: 1200px) {
-    div.MainContent {
-        margin: 3em 5em 3em 5em;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    div.MainContent {
-        max-width: 1200px;
-    }
-}
-
-@media only screen and (min-width: 1900px) {
-    .footer-copyright {
-        padding-right: 23em;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    div.MainContent {
-        margin: 1em 0 1em 0;   
-    }
 }
 
 /* PORTFOLIO */
@@ -132,6 +129,7 @@ h6 {
  h6:hover {
      color: rgb(115, 73, 231);
  }
+
 /* CONTACT */
 
 div.container {
@@ -147,28 +145,11 @@ div.container {
     background-color: rgb(115, 73, 231);
 }
 
-/* LinkedIn */
-/* #linked-in {
-    float: right;
-    text-align: right;
-} */
-
 #linked-in-header,
 #github-header {
     display: inline-block;
     padding-top: 1.3rem;
     margin-right: 1rem;
-}
-
-.fa-linkedin {
-    /* margin-top: 1rem; */
-    color: #0077B5;
-    margin-left:1rem;
-    opacity: 0.9;
-}
-
-.fa-linkedin:hover {
-    opacity: 1;
 }
 
 /* FOOTER */
@@ -180,4 +161,38 @@ footer {
 .footer-copyright {
     color: rgb(115, 73, 231);
     margin-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* Large Screens */
+
+@media only screen and (min-width: 1900px) {
+    .footer-copyright {
+        padding-right: 23em;
+    }
+}
+
+/* Medium Screens */
+
+@media only screen and (max-width: 1200px) {
+    div.MainContent {
+        margin: 3em 5em 3em 5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div.MainContent {
+        max-width: 1200px;
+    }
+}
+
+/* Small Screens */
+
+@media only screen and (max-width: 700px) {
+    div.MainContent {
+        /* margin: 1em 0.5em 1em 0.5em;   */
+        margin: 1em;
+        padding:3em 2em 3em 2em; 
+    }
 }
