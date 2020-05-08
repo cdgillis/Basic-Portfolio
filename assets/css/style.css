@@ -78,12 +78,11 @@ div.MainContent {
     opacity: 0.95;
 }
 
-h2 {
-    /* font-family: 'Syncopate', sans-serif; */
+h1, h2 {
     font-family: 'Monoton', sans-serif;
     color: rgb(115, 73, 231);
     font-weight: 500;
-    margin-left: 18px;
+    /* margin-left: 18px; */
 }
 
 #about-me {
@@ -104,12 +103,18 @@ b {
 }
 
 b#toronto {
-    font-weight: 400;
     color: black;
     font-size: 2em;
-    font-family: 'Monoton', sans-serif;
 }
 
+b#toronto-sm {
+    color: black;
+    font-size: 1.5em;
+}
+
+h1#portfolio, h1#contact {
+    margin-left: 18px;
+}
 
 /* PORTFOLIO */
 
@@ -203,10 +208,53 @@ footer {
 
 /* Small Screens */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 722px) {
     div.MainContent {
         /* margin: 1em 0.5em 1em 0.5em;   */
         margin: 1em;
         padding:3em 2em 3em 2em; 
     }
 }
+
+/* Font Sizing */
+
+    /* Big Screen */
+    @media (min-width: 551px) {
+        #big-screen {
+        display:block;
+        }
+        #small-screen {
+        display:none;
+        }
+    }
+
+    /* Small Screen */
+    @media (max-width: 550px) {
+        #big-screen {
+        display:none;
+        }
+        #small-screen {
+        display:block;
+        }
+    }
+    /* Big Screen */
+    @media (min-width: 840px) {
+        b#toronto {
+            display:inline-block;
+        }
+        b#toronto-sm {
+            display:none;
+        }
+    }
+
+    /* Small Screen */
+    @media (max-width: 839px) {
+        b#toronto {
+            display:none;
+        }
+        b#toronto-sm {
+            display: inline-block;
+        }
+    }
+
+  
