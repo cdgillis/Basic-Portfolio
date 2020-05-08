@@ -58,6 +58,9 @@ nav {
     text-shadow: -1px 0 rgb(115, 73, 231), 0 1px rgb(115, 73, 231), 1px 0 rgb(115, 73, 231), 0 -1px rgb(115, 73, 231);
 }
 
+.nav-item {
+    text-align: right;
+}
 
 /* MAIN CONTENT STYLING */
 
@@ -80,6 +83,7 @@ h2 {
     font-family: 'Monoton', sans-serif;
     color: rgb(115, 73, 231);
     font-weight: 500;
+    margin-left: 18px;
 }
 
 #about-me {
@@ -98,6 +102,14 @@ b {
     font-size: 2em;
     font-family: 'Monoton', sans-serif;
 }
+
+b#toronto {
+    font-weight: 400;
+    color: black;
+    font-size: 2em;
+    font-family: 'Monoton', sans-serif;
+}
+
 
 /* PORTFOLIO */
 
@@ -132,9 +144,11 @@ h6 {
 
 /* CONTACT */
 
-div.container {
+/* div#contact-form {
     max-width: 800px;
-}
+    margin-left: 18px;
+    margin-right: 18px;
+} */
 
 .form-control,
 .btn {
