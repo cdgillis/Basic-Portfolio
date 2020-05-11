@@ -326,19 +326,29 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
 
   <script>
+
+    // NAVBAR TABS SCROLL
+
     $("#portfolio-scroll").click(function () {
       $('html,body').animate({
-        scrollTop: $("#portfolio").offset().top - 110
+        scrollTop: $("#portfolio").offset().top - 180
       },
         'slow');
     });
 
     $("#contact-scroll").click(function () {
       $('html,body').animate({
-        scrollTop: $("#contact").offset().top - 110
+        scrollTop: $("#contact").offset().top - 180
       },
         'slow');
     });
+
+    // NAVBAR COLLAPSE TO HAMBURGER ON CLICK
+
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+
   </script>
 
 </body>
