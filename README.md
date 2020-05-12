@@ -8,6 +8,6 @@ I'm also a writer and insurance professional with a business degree from McGill 
 
 #### Technical Skills:
 
-Node.Js * Express * JavaScript * jQuery * React * MongoDB * MySQL * Firebase * Handlebars * HTML * CSS * Bootstrap * Media Queries * APIs * Heroku * Microsoft Suite * Google Apps * Zoho * JIRA * Salesforce 
+Node.Js * Express * JavaScript * jQuery * React * MongoDB * MySQL * Firebase * Handlebars * Bookshelf * HTML * CSS * Bootstrap * Media Queries * APIs * Heroku * Microsoft Suite * Google Apps * Zoho * JIRA * Salesforce 
 
 ### [See my Portfolio](https://catherinegillis.ca)
