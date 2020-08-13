@@ -216,6 +216,49 @@ footer {
     }
 }
 
+/* Extra-Small Screens */
+
+@media only screen and (max-width: 340px) {
+    div.MainContent {
+        /* margin: 1em 0.5em 1em 0.5em;   */
+        margin: 1em;
+        padding:2em 1em 2em 1em; 
+    }
+}
+
+/* Extra Extra Small Screens */
+@media only screen and (max-width: 300px) {
+    div.MainContent {
+        /* margin: 1em 0.5em 1em 0.5em;   */
+        margin: 1em;
+        padding:2em 1em 2em 1em; 
+    }
+}
+/* Margin-Top of About Me Section */
+
+@media only screen and (max-width: 446px) {
+    div#about-me {
+        margin-top: 11em;
+    }
+}
+
+/* Navbar Name Font Sizing */
+
+/* Small Screens */
+@media only screen and (max-width: 359px) {
+    a#catherine-gillis {
+        font-size: 1.8em;
+    }
+}
+
+/* Larger Screens */
+
+@media only screen and (min-width: 360px) {
+    a#catherine-gillis {
+        font-size: 1.9rem;
+    }
+}
+
 /* Font Sizing */
 
     /* Big Screen */
