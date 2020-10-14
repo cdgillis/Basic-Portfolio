@@ -1,6 +1,6 @@
 # Catherine Gillis
 
-Based in Toronto, Canada.
+Based in Canada.
 
 ### Not your typical Full Stack Web Developer
 
