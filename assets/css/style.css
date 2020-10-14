@@ -5,7 +5,6 @@ body {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    /* background-color: black; */
     margin: auto;
 }
 
@@ -16,8 +15,6 @@ nav {
     position: fixed;
     vertical-align: top;
     background-color: black;
-    /* background-color: transparent; */
-    /*background-image: linear-gradient(to right, navy, rgb(231, 115, 246));*/
     margin-bottom: 20px;
 }
 
@@ -25,27 +22,33 @@ nav {
 
 .navbar-brand {
     font-size: 1.9rem;
-    /* margin-left: 4.25em; */
     font-family: 'Monoton', cursive;
     font-weight: 500;
 }
 
 .navbar-brand:hover {
-    /* text-shadow: -1px 0 rgb(115, 73, 231), 0 1px rgb(115, 73, 231), 1px 0 rgb(115, 73, 231), 0 -1px rgb(115, 73, 231); */
     text-decoration: underline rgb(115, 73, 231) solid;
 }
 
 /* Tab - LinkedIn */
 
 .fa-linkedin {
-    /* margin-top: 1rem; */
-    color: #0077B5;
+    color: grey;
     margin-left:1rem;
-    opacity: 0.9;
 }
 
 .fa-linkedin:hover {
-    opacity: 1;
+    color: #0077B5;
+}
+
+/* Tab - Github */
+
+.fa-github {
+    color: grey;
+}
+
+.fa-github:hover {
+    color: whitesmoke;
 }
 
 /* Tabs - Portfolio & Contact */
@@ -82,7 +85,6 @@ h1, h2 {
     font-family: 'Monoton', sans-serif;
     color: rgb(115, 73, 231);
     font-weight: 500;
-    /* margin-left: 18px; */
 }
 
 #about-me {
@@ -92,22 +94,21 @@ h1, h2 {
 #mainpic {
     border-radius: 150px;
     align-content: center;
-    /* float: right; */
 }
 
 b {
-    font-weight: 400;
+    font-weight: 100;
     color: rgb(115, 73, 231);
     font-size: 2em;
     font-family: 'Monoton', sans-serif;
 }
 
-b#toronto {
+b#location {
     color: black;
     font-size: 2em;
 }
 
-b#toronto-sm {
+b#location-sm {
     color: black;
     font-size: 1.5em;
 }
@@ -210,7 +211,6 @@ footer {
 
 @media only screen and (max-width: 722px) {
     div.MainContent {
-        /* margin: 1em 0.5em 1em 0.5em;   */
         margin: 1em;
         padding:3em 2em 3em 2em; 
     }
@@ -220,7 +220,6 @@ footer {
 
 @media only screen and (max-width: 340px) {
     div.MainContent {
-        /* margin: 1em 0.5em 1em 0.5em;   */
         margin: 1em;
         padding:2em 1em 2em 1em; 
     }
@@ -229,7 +228,6 @@ footer {
 /* Extra Extra Small Screens */
 @media only screen and (max-width: 300px) {
     div.MainContent {
-        /* margin: 1em 0.5em 1em 0.5em;   */
         margin: 1em;
         padding:2em 1em 2em 1em; 
     }
@@ -282,20 +280,20 @@ footer {
     }
     /* Big Screen */
     @media (min-width: 840px) {
-        b#toronto {
+        b#location {
             display:inline-block;
         }
-        b#toronto-sm {
+        b#location-sm {
             display:none;
         }
     }
 
     /* Small Screen */
     @media (max-width: 839px) {
-        b#toronto {
+        b#location {
             display:none;
         }
-        b#toronto-sm {
+        b#location-sm {
             display: inline-block;
         }
     }
